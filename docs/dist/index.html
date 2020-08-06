@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Collection of things</title>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+  
+  <div class="row-container">
+    <a href="javascript:void(0)" onclick="openTab(event, 'charts');">
+      <div class="row-item tablink row-item-hover">Charts</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'PieChart');">
+      <div class="row-item tablink row-item-hover">Pie Chart</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openTab(event, 'WorkerMobility');">
+      <div class="row-item tablink row-item-hover">Worker Mobility</div>
+    </a>  
+    <a href="javascript:void(0)" onclick="openTab(event, 'PhasedOpening');">
+      <div class="row-item tablink row-item-hover">Phased Opening</div>
+    </a>
+  </div>
+  
+  
+  <div class="content-container">
+
+    <div id="charts" class="container tab">
+      <div id="title">Charts made with Chart.js</div>
+      
+      <h1>Combo chart</h1>
+      <div class="info_container">
+        <div class="heading">Lafayette, LA</div>
+        <!--   <div class="item">Parish / County :</div> -->
+        <!--   <div class="value">Lafayette | LA</div> -->
+        <div class="item">Cases :</div>
+        <div class="value">5929</div>
+        <div class="item">Deaths :</div>
+        <div class="value">80</div>
+        <div class="item">Current Status :</div>
+        <div class="value">Declining Cases</div>
+        <div class="item">Vulnerability :</div>
+        <div class="value">Medium</div>
+      </div>
+      <div id="chart-legend">
+        <div class="item cases"></div>
+        <div class="item">Actual Cases</div>
+        <div class="item forecasted"></div>
+        <div class="item">Forecasted Cases</div>
+      </div>
+      <div class="chart-container">
+        <canvas id="combo_chart"></canvas>
+      </div>
+      
+      <h1 style="padding-top:80px">Line chart</h1>
+      <div id="chart-legend">
+        <div class="item line"></div>
+        <div class="item">Number of Cases</div>
+      </div>
+      <div class="chart-container">
+        <canvas id="line_chart"></canvas>
+      </div>
+
+      <h1 style="padding-top:80px">Bar chart</h1>
+      <div class="chart-container">
+        <canvas id="bar_chart"></canvas>
+      </div>
+
+    </div>
+    
+    <div id="PieChart" class="container tab" style="display:none">
+      <div id="title">Pie Charts with Labels</div>
+    
+      <h1>Labels using "chartjs-plugin-datalabels" ( <a href="https://chartjs-plugin-datalabels.netlify.app/" target="_blank">Documentation</a> )</h1>
+      <div class="chart-container">
+        <canvas id="datalabelsChart"></canvas>
+      </div>
+
+      <h1 style="padding-top:80px">Labels using "Pie Chart Outlabels" ( <a href="https://piechart-outlabels.netlify.app/" target="_blank">Documentation</a> )</h1>
+      <div class="chart-container">
+        <canvas id="outlabeledChart"></canvas>
+      </div>
+    </div>
+
+    <div id="WorkerMobility" class="container tab" style="display:none">
+      <p>Worker Mobility Panel</p>
+    </div>
+
+    <div id="PhasedOpening" class="container tab" style="display:none">
+      <p>Phased Opening Panel</p>
+    </div>
+  </div>
+  
+  <footer class="footer">Footer</footer>
+  
+  
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
+<!--   <script src="https://d3js.org/d3.v5.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-piechart-outlabels@0.1.4/dist/chartjs-plugin-piechart-outlabels.min.js"></script>
+  
+  <script src="scripts/index.js"></script>
+  <script src="scripts/variables.js"></script>
+  <script src="scripts/pie-chart.js"></script>
+  <script src="scripts/combo-bar-chart.js"></script>
+  <script src="scripts/line-chart.js"></script>
+  <script src="scripts/bar-chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #2d2e39;
+  color: #fff;
+  font: 100% Segoe UI;
+  line-height: 1.5;
+}
+
+.container:after, .container:before, .row-container:after, .row-container:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row-container {
+  width: 100%;
+  background-color: #383947;
+}
+
+.row-item {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  width: 24.99999%;
+  padding: 8px 16px !important;
+}
+
+.row-item-hover:hover {
+  background-color: #2d2e39;
+}
+
+.row-item-selected {
+  background-color: #434556 !important;
+}
+
+.content-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+#title {
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.info_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0 40px 0;
+  line-height: 24px;
+  color: #e2e3e9;
+}
+
+.info_container .heading {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 0 0 20px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.info_container .item {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding: 0 5px 0 0;
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.info_container .value {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  /*   font-weight: bold; */
+}
+
+#chart-legend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 20px 0;
+  font-size: 12px;
+}
+
+#chart-legend .item {
+  line-height: 12px;
+  padding: 0 10px 0 5px;
+}
+
+#chart-legend .item.cases {
+  background: #a52941;
+}
+
+#chart-legend .item.forecasted {
+  background: #e38c4e;
+}
+
+#chart-legend .item.line {
+  width: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#448aff), color-stop(#00bcd4), to(#1de9b6));
+  background: linear-gradient(to right, #448aff, #00bcd4, #1de9b6);
+}
+
+.chart-container {
+  margin: auto;
+  width: 630px;
+}
+
+a {
+  color: #fff;
+}
+
+.footer {
+  margin-top: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 20px;
+  /*   font-size: 12px; */
+  background: #2d2e39;
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */
