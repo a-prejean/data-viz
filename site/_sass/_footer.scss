@@ -1,0 +1,29 @@
+@import "variables";
+
+.flex-footer {
+  margin-top: auto;
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 10px 20px;
+  /*   font-size: 12px; */
+}
+
+footer {
+  background: $bg-border-color;
+  color: $text-color-footer;
+}
+
+
+// Links
+footer a:link {
+  color: $text-color-link;
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
+  font-weight: 600;
+  // font-style: oblique;
+}
+
+footer a:visited {
+  color: $text-color-link-visited;
+  background-color: transparent;
+}

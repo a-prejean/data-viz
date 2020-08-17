@@ -1,0 +1,35 @@
+// Chart colors
+$barColorA: #a52941; // 378a65, df644c, f4974f
+$barHoverColorA: #931e37; // 2b7a51, df644c
+$curveColor: #fff388; // ffffd9, ffffcc
+$barColorB: #e38c4e; // 96c078, c64f39
+$barHoverColorB: #c36a2f; // 70a461, bf3250
+
+
+
+// Charts
+#chart-legend {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+  font-size: 12px;
+}
+
+#chart-legend .item {
+  line-height: 12px;
+  padding: 0 10px 0 5px;
+}
+
+#chart-legend .item.cases {
+  background: $barColorA;
+}
+
+#chart-legend .item.forecasted {
+  background: $barColorB;
+}
+
+#chart-legend .item.line {
+  width: 20px;
+  background: linear-gradient(to right, #448aff, #00bcd4, #1de9b6);
+}
+

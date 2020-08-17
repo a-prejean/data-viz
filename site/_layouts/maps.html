@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css">
+
+</head>
+<body>
+  {% include navigation.html %}
+
+  {{ content }}
+
+  {% include footer.html %}
+  
+  <!-- Scripts -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
+
+</body>
+</html>
