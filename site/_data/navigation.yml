@@ -1,7 +1,7 @@
 - name: Home
-  link: /
+  link: .
 - name: Chart.js
-  link: /pages/charts.html
+  link: pages/charts.html
 - name: Mapbox
   link: pages/maps.html
 # - name: Blog
