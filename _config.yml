@@ -19,11 +19,11 @@
 # in the templates via {{ site.myvariable }}.
 
 # title: Your awesome title
-title: "Jekyll Actions Demo"
+# title: "Jekyll Actions Demo"
 
 # email: your-email@example.com
 
-source: site
+source: website
 
 collections_dir: my_collections
 
