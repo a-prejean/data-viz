@@ -1,5 +1,5 @@
 - name: Home
-  link: .
+  link: /
 - name: Chart.js
   link: pages/charts.html
 - name: Mapbox
