@@ -4,6 +4,10 @@
   link: /pages/charts.html
 - name: Mapbox
   link: /pages/maps.html
+  # type: dropdown
+  # droplink: /pages/maps.html
+- name: Cluster Map
+  link: /pages/map-clusters.html
 - name: Observable
   link: /pages/observable.html
 # - name: Blog

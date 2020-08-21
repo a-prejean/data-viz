@@ -1,6 +1,4 @@
-mapboxgl.accessToken = "pk.eyJ1IjoidWJlcmRhdGEiLCJhIjoidGllX1gxUSJ9.gElUooDF7u51guCQREmAhg"; // vis.gl token?
-// "pk.eyJ1IjoiYXByZWplYW4iLCJhIjoiY2tkNXp3ZHo4MGdlZDMycGdjMHpidTduZCJ9.NUFlwrBU2cTE1NRZEyR2Wg";
-  
+mapboxgl.accessToken = "pk.eyJ1IjoidWJlcmRhdGEiLCJhIjoiY2pudzRtaWloMDAzcTN2bzN1aXdxZHB5bSJ9.2bkj3IiRC8wj3jLThvDGdA";   
 
 // create base map
 var map = new mapboxgl.Map({

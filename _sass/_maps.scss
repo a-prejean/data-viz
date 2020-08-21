@@ -46,3 +46,27 @@
   margin-right: 8px;
   width: 16px;
 }
+
+#key {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 22.22%;
+  height: auto;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.total {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  /*   font-family: "Montserrat", sans-serif; */
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.table {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  /*   font-family: "Montserrat", sans-serif; */
+  color: white;
+  border-collapse: collapse;
+}
