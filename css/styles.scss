@@ -1,0 +1,12 @@
+---
+# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
+---
+@import "resets";
+@import "variables";
+@import "flexbox";
+@import "header";
+@import "footer";
+@import "dataviz";
+@import "maps";
+@import "main";

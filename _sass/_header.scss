@@ -1,0 +1,36 @@
+@import "variables";
+
+.flex-header {
+  // display: flex;
+  display: inline-flex;
+  margin-bottom: auto;
+  flex-shrink: 0;
+  // justify-content: space-evenly;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  background-color: $bg-border-color;
+  // height: 27px;
+}
+
+// Tabs
+.tablink { // Default
+  flex: 0 1 120px; // 10%
+  background-color: $bg-border-color;
+  color: $text-color;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tablink.active {
+  background-color: $accent-color !important;
+}
+
+.tablink:hover {
+  background-color: $accent-color2;
+}

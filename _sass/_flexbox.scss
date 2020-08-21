@@ -1,0 +1,57 @@
+.flex-column {
+  height: 100%;  /*allows both columns to span the full height of the browser window*/
+  display: flex;
+  flex-direction: column;  /*places the left and right headers above the bottom content*/
+}
+
+.flex-container {
+  // flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  // padding: 16px;
+  // padding: 0.5em 16px;
+  // height: 100%; // add height:100% for full page content
+  flex-grow: 1; // ensures that the container will take up the full height of the parent container
+  overflow-y: auto; // adds scroll to this container
+}
+
+.flex-container-row {
+  height: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; // along CROSS axis, aligns each ITEM to each other
+  align-content: flex-start; // aligns entire group within container
+}
+
+.flex-item {
+  color: $text-color;
+  font-size: 2em;
+  padding: 40px;
+  // turn "children" into containers
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // flex-basis: 25%; // starting point of item's width
+}
+
+// Charts
+.item-chart1 {
+  min-height: 50px;
+  flex: 1 1 10%; // flex-grow, flex-shrink, flex-basis
+  // flex-direction: column;
+  // align-self: center; // override container's align setting
+  // order: 0; // override order of elements without changing html
+}
+.item-chart2 {
+  min-height: 50px;
+  flex: 1 1 10%;
+}
+.item-chart3 {
+  min-height: 50px;
+  flex: 1 1 10%;
+}
+
+.item-pieChart {
+  min-height: 50px;
+  flex: 1 1 10%;
+}

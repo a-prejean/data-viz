@@ -1,0 +1,70 @@
+---
+title: Charts made with Chart.js
+---
+<div class="flex-container">
+
+  <h1>Charts made with Chart.js</h1>
+
+  <div class="flex-container-row">
+
+    <div class="flex-item item-chart1">
+      <h3>Combo chart</h3>
+      <div id="chart-legend">
+        <div class="item cases"></div>
+        <div class="item">Actual</div>
+        <div class="item forecasted"></div>
+        <div class="item">Forecasted</div>
+      </div>
+      <div class="chart-container">
+        <canvas id="combo_chart"></canvas>
+      </div>
+    </div>
+
+    <div class="flex-item item-chart2">
+      <h3>Line chart</h3>
+      <div id="chart-legend">
+        <div class="item line"></div>
+        <div class="item">Data</div>
+      </div>
+      <div class="chart-container">
+        <canvas id="line_chart"></canvas>
+      </div>
+    </div>
+
+    <div class="flex-item item-chart3">
+      <h3>Horizontal Bar chart</h3>
+      <div class="chart-container">
+        <canvas id="bar_chart"></canvas>
+      </div>
+    </div>
+    
+    <div class="flex-item item-pieChart">
+      <h3>Labels using "chartjs-plugin-datalabels" ( <a href="https://chartjs-plugin-datalabels.netlify.app/" target="_blank">Documentation</a> )</h3>
+      <div class="piechart-container">
+        <canvas id="datalabelsChart"></canvas>
+      </div>
+    </div>
+
+    <div class="flex-item item-pieChart">
+      <h3>Labels using "Pie Chart Outlabels" ( <a href="https://piechart-outlabels.netlify.app/" target="_blank">Documentation</a> )</h3>
+      <div class="piechart-container">
+        <canvas id="outlabeledChart"></canvas>
+      </div>
+    </div>
+    
+  </div>
+
+
+  
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-piechart-outlabels@0.1.4/dist/chartjs-plugin-piechart-outlabels.min.js"></script>
+
+<script src="/js/variables.js"></script>
+<script src="/js/pie-chart.js"></script>
+<script src="/js/combo-bar-chart.js"></script>
+<script src="/js/line-chart.js"></script>
+<script src="/js/bar-chart.js"></script>
