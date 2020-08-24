@@ -1,6 +1,21 @@
 <nav class="flex-header">
   {% for item in site.data.navigation %}
-    <a href="{{ site.baseurl }}{{ item.link }}"{% if page.url == item.link %} class="tablink active"{% endif %} class="tablink">{{ item.name }}</a>
+
+    {% if item.type != "dropdown" %}
+      <a href="{{ site.baseurl }}{{ item.link }}" class="tablink{% if page.url == item.link %} active{% endif %}">{{ item.name }}</a>
+    {% endif %}
+
+    {% if item.name == "MAPS" %}
+      <div class="dropdown">
+        <button class="dropbtn{% if page.url == item.link %} active{% endif %}" onclick="document.location='{{ site.baseurl }}{{ item.link }}'">{{ item.name }}</button>
+        <div class="dropdown-content">
+          {% for link in item.links %}
+            <a href="{{ site.baseurl }}/pages/maps/{{ link }}.html">{{ link }}</a>
+          {% endfor %}
+        </div>
+      </div> 
+    {% endif %}
+
   {% endfor %}
 </nav>
 

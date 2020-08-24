@@ -2,12 +2,10 @@
   link: /
 - name: Chart.js
   link: /pages/charts.html
-- name: Mapbox
+- name: MAPS
   link: /pages/maps.html
-  # type: dropdown
-  # droplink: /pages/maps.html
-- name: Cluster Map
-  link: /pages/map-clusters.html
+  type: dropdown
+  links: [Choropleth, Clusters]
 - name: Observable
   link: /pages/observable.html
 # - name: Blog
@@ -16,3 +14,7 @@
 #   link: /pages/about.html
 # - name: Bio
 #   link: /pages/home.html
+# - name: Mapbox2
+#   type: dropdown
+#   link1: /pages/map-choropleth.html
+#   link2: /pages/map-clusters.html
