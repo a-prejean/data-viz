@@ -1,4 +1,3 @@
-
 // Bar Chart
 function barChart(
   chart_name,
