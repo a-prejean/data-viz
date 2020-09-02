@@ -1,7 +1,3 @@
-// Read this JSON file and use obj = JSON.parse(data) to transfer it as object;
-// Call echarts.registerTheme('dark_theme', obj) to register the theme.
-// Use echarts.init(dom, 'dark_theme') to create the chart. The second parameter represents the theme name
-
 {
     "color": [
         "#d9615b",
