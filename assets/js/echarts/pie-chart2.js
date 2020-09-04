@@ -1,5 +1,5 @@
 // based on prepared DOM, initialize echarts instance
-var pieChart = echarts.init(document.getElementById("pie_chart")); //, 'dark');
+var pieChart = echarts.init(document.getElementById("pie_chart2")); //, 'dark');
 
 // specify chart configuration item and data
 var pieChartData = [
@@ -30,35 +30,34 @@ var pieChartOptions = {
       hoverOffset: 4, // 10
       startAngle: 90,
       // For doughnut:
-      // radius: ["32%", "64%"],
+      radius: ["30%", "60%"],
       // For pie:
-      radius: '64%',
-      center: ['50%', '50%'],
+      // radius: '50%',
+      // center: ['50%', '50%'],
       itemStyle: {
         borderColor: "#2d2e39",
         borderWidth: 4,
       },
-      avoidLabelOverlap: true,
+      avoidLabelOverlap: false,
       label: {
         show: true,
-        formatter: "{b} ({d}%)",
+        formatter: "{b}",
         position: "outer",
-        alignTo: "edge", // none(default), labelLine, edge
-        margin: 10,
-        bleedMargin: 10,
-        distanceToLabelLine: 16, // padding*2
+        alignTo: "none", // none(default), labelLine, edge
+        distanceToLabelLine: 0, // padding*2
         padding: 8,
         fontSize: 12,
+        fontWeight: 'bold',
         color: "#ffffff",
         borderRadius: 4,
-        // backgroundColor: 'auto',
+        backgroundColor: 'auto',
         borderColor: "auto",
         borderWidth: 2
       },
       labelLine: {
         show: true,
-        // length: 32,
-        // length2: 32,
+        length: 24,
+        length2: 32,
         // smooth: true,
         lineStyle: {
           width: 2
@@ -74,7 +73,8 @@ var pieChartOptions = {
           padding: 8,
           // fontSize: 14,
           // fontWeight: 'bold',
-          borderWidth: 4
+          borderWidth: 4,
+          borderOpacity: 0.5
         },
         labelLine: {
           lineStyle: {
@@ -86,6 +86,7 @@ var pieChartOptions = {
     }
   ]
 };
+
 
 // use configuration item and data specified to show chart
 pieChart.setOption(pieChartOptions);
