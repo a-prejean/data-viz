@@ -29,9 +29,29 @@ var theme = "dark_theme";
 // based on prepared DOM, initialize echarts instance
 var myChart = echarts.init(dom); //, 'dark');
 
+// Gradient Colors
+var dataColor1 = new echarts.graphic.LinearGradient(
+  0, 0, 0, 1, // Vertical
+  // 0, 0, 1, 0, // Horizontal
+  [
+    {offset: 0, color: '#a52941'},
+    {offset: 1, color: '#b8454c'}
+  ]
+);
+var dataColor2 = new echarts.graphic.LinearGradient(
+  0, 0, 0, 1, // Vertical
+  // 0, 0, 1, 0, // Horizontal
+  [
+    {offset: 0, color: '#ed9537'},
+    {offset: 1, color: '#fa9d63'} // e38c4e
+  ]
+);
+
+
+
 // specify chart configuration item and data
 var option = {
-  color: ["#a52941", "#e38c4e", "#fff388"],
+  color: [dataColor1, dataColor2, "#fff388"],
   title: {
     // text: "ECharts entry example",
     textStyle: {
@@ -173,7 +193,7 @@ var option = {
         // Map the "product" column to Y axis
         y: "Actual"
       },
-      barGap: '-100%',
+      barGap: "-100%",
       barWidth: "75%",
       itemStyle: {
         barBorderRadius: 50, // or [50, 50, 0, 0],
@@ -189,12 +209,10 @@ var option = {
         x: "Date",
         y: "Forecasted"
       },
-      barGap: '-100%',
+      barGap: "-100%",
       barWidth: "75%",
       itemStyle: {
         barBorderRadius: 50, // or [50, 50, 0, 0],
-        borderWidth: 0,
-        borderColor: "#fff"
       }
     },
     {
