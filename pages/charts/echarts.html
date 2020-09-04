@@ -1,0 +1,63 @@
+---
+title: Charts made with ECharts
+---
+<div class="flex-container">
+
+  <h1>Charts made with ECharts</h1>
+
+  <div class="flex-container-row">
+
+    <div class="flex-item item-chart">
+      <h3>Combo Bar/Line Chart</h3>
+         <div id="combo_chart" class="echart-container"></div>
+    </div>
+
+    <div class="flex-item item-chart">
+      <h3>Line Chart</h3>
+        <div id="line_chart" class="echart-container"></div>
+    </div>
+
+    <div class="flex-item item-chart">
+      <h3>Horizontal Bar chart</h3>
+        <div id="bar_chart" class="echart-container"></div>
+    </div>
+
+
+
+
+    <div class="flex-item item-chart">
+      <h3>Labels using "chartjs-plugin-datalabels" ( <a href="https://chartjs-plugin-datalabels.netlify.app/" target="_blank">Documentation</a> )</h3>
+      <div class="piechart-container">
+        <canvas id="datalabelsChart"></canvas>
+      </div>
+    </div>
+
+    <div class="flex-item item-chart">
+      <h3>Labels using "Pie Chart Outlabels" ( <a href="https://piechart-outlabels.netlify.app/" target="_blank">Documentation</a> )</h3>
+      <div class="piechart-container">
+        <canvas id="outlabeledChart"></canvas>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
+<script src="https://d3js.org/d3-dsv.v2.min.js"></script>
+<script src="https://d3js.org/d3-fetch.v2.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.15.0/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-piechart-outlabels@0.1.4/dist/chartjs-plugin-piechart-outlabels.min.js"></script>
+
+<script src="{{ site.baseurl }}/assets/js/variables.js"></script>
+<script src="{{ site.baseurl }}/assets/js/echarts/combo-bar-chart.js"></script>
+<script src="{{ site.baseurl }}/assets/js/echarts/line-chart.js"></script>
+<script src="{{ site.baseurl }}/assets/js/echarts/bar-chart.js"></script>
+<script src="{{ site.baseurl }}/assets/js/pie-chart.js"></script>
+
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/echarts/dark_theme.js"></script>

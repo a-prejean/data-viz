@@ -25,33 +25,11 @@
 .flex-item {
   color: $text-color;
   font-size: 2em;
-  padding: 40px;
+  padding: 40px 0px;
   // turn "children" into containers
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   // flex-basis: 25%; // starting point of item's width
-}
-
-// Charts
-.item-chart1 {
-  min-height: 50px;
-  flex: 1 1 10%; // flex-grow, flex-shrink, flex-basis
-  // flex-direction: column;
-  // align-self: center; // override container's align setting
-  // order: 0; // override order of elements without changing html
-}
-.item-chart2 {
-  min-height: 50px;
-  flex: 1 1 10%;
-}
-.item-chart3 {
-  min-height: 50px;
-  flex: 1 1 10%;
-}
-
-.item-pieChart {
-  min-height: 50px;
-  flex: 1 1 10%;
 }

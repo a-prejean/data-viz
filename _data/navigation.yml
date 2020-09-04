@@ -1,7 +1,9 @@
 - name: Home
   link: /
+- name: ECharts
+  link: /pages/charts/echarts.html
 - name: Chart.js
-  link: /pages/charts.html
+  link: /pages/charts/chartjs.html
 - name: MAPS
   link: /pages/maps.html
   type: dropdown
