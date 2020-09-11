@@ -7,7 +7,7 @@
 
     {% if item.name == "MAPS" %}
       <div class="dropdown">
-        <button class="dropbtn{% if page.url == item.link %} active{% endif %}" onclick="document.location='{{ site.baseurl }}{{ item.link }}'">{{ item.name }}</button>
+        <button class="dropbtn{% if page.url == item.link %} active{% endif %}">{{ item.name }}</button>
         <div class="dropdown-content">
           {% for link in item.links %}
             <a href="{{ site.baseurl }}/pages/maps/{{ link }}.html">{{ link }}</a>

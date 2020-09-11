@@ -26,7 +26,7 @@ var option = {
         backgroundColor: "#434556",
         borderWidth: 0,
         shadowBlur: 0,
-        formatter: "{value}"
+        // formatter: "{value}"
         // formatter: function(params) { return params.value.replace("\n", ""); }
       },
       // lineStyle: {
