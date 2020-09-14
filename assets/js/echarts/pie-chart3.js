@@ -10,7 +10,6 @@ var pieChartData = [
   { value: 948, name: "Data E" }
 ];
 
-
 var pieChartOptions = {
   color: ["#d28084", "#a78eb6", "#49a4b1", "#65B77A", "#D2B950"],
   tooltip: {

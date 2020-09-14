@@ -12,6 +12,9 @@ var curveColor = "#fff388"; // ffffd9, ffffcc
 var barColorB = "#e38c4e"; // 96c078, c64f39
 var barHoverColorB = "#c36a2f"; // 70a461, bf3250
 
+
+
+// Line Chart Colors
 // var curve_color = ["#ffffd9"]; // Single color
 var curve_color = ["#7C4DFF", "#448AFF", "#00BCD4", "#1DE9B6"]; // Gradient
 
