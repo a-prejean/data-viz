@@ -13,6 +13,14 @@
   // height: 27px;
 }
 
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
 // Tabs
 .tablink { // Default
   flex: 0 1 $tab-width; // 10%
@@ -90,3 +98,6 @@
 // .show {
 //   display: block;
 // }
+
+
+

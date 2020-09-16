@@ -21,6 +21,9 @@ body {
   color: $text-color;
   font: 100% $font-stack;
   line-height: 1.5;
+  // For fixed nav bar:
+  min-height: 75rem;
+  padding-top: 4.5rem;
 }
 
 main {
