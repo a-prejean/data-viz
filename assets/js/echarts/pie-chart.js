@@ -1,15 +1,6 @@
 // based on prepared DOM, initialize echarts instance
 var pieChart = echarts.init(document.getElementById("pie_chart")); //, 'dark');
 
-// specify chart configuration item and data
-var pieChartData = [
-  { value: 335, name: "Data A" },
-  { value: 510, name: "Data B" },
-  { value: 634, name: "Data C" },
-  { value: 800, name: "Data D" },
-  { value: 948, name: "Data E" }
-];
-
 var pieChartOptions = {
   color: ["#d28084", "#a78eb6", "#49a4b1", "#65B77A", "#D2B950"],
   tooltip: {

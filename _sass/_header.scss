@@ -10,7 +10,8 @@
   align-items: stretch;
   align-content: stretch;
   background-color: $bg-border-color;
-  // height: 27px;
+  // height: 56px;
+  line-height: 1.5;
 }
 
 .fixed-top {
@@ -31,7 +32,7 @@
   cursor: pointer;
   padding: $tab-font-padding-size;
   // text-overflow: clip;
-  font-size: $tab-font-padding-size;
+  font-size: $tab-font-size;
   text-align: center;
   text-decoration: none;
 }
@@ -58,8 +59,8 @@
   outline: none;
   cursor: pointer;
   padding: $tab-font-padding-size;
-  font-size: $tab-font-padding-size;
-  font: 100% $font-stack;
+  font-size: $tab-font-size;
+  // font: 100% $font-stack;
   line-height: 1.5;
   min-width: $tab-width;
   text-align: center;

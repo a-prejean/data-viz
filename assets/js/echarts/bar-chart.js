@@ -1,6 +1,6 @@
 // Get data then run chart funtions with that data and specify DOM elements
 crest_data_formatted.then(function (data, dom) {
-  return bar_chart(data, "bar_chart");
+  bar_chart(data, "bar_chart");
 });
 
 function bar_chart(data, dom) {

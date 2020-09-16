@@ -1515,3 +1515,13 @@ var covid_data = [
       8586
    ]
 ];
+
+
+// Pie Charts
+var pieChartData = [
+   { value: 335, name: "Data A" },
+   { value: 510, name: "Data B" },
+   { value: 634, name: "Data C" },
+   { value: 800, name: "Data D" },
+   { value: 948, name: "Data E" }
+ ];

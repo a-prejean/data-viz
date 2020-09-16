@@ -1,6 +1,6 @@
 // Get data then run chart funtions with that data and specify DOM elements
 crest_data_formatted.then(function (data, dom) {
-  return line_chart(data, "line_chart");
+  line_chart(data, "line_chart");
 });
 
 function line_chart(data, dom) {

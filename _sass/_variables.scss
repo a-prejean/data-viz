@@ -1,3 +1,19 @@
+// Fonts
+// font: shorthand syntax = font-style font-variant font-weight font-size/line-height font-family
+$font-stack: Verdana;
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700
+);
+
+
+
+
+
+
+
+
 $bg-color: #2d2e39;
 $bg-highlight-color: #383947;
 $bg-border-color: #434556;
@@ -16,19 +32,13 @@ $text-color-link: #57a1c7;
 $text-color-link-visited: #b3dbe3;
 $text-color-link-hover: #3a8dbf;
 
-$font-stack: Segoe UI;
-$font-weights: (
-  "regular": 400,
-  "medium": 500,
-  "bold": 700
-);
-
 $full-size: 100%;
 
 $mobile: 800px;
 
-$tab-width: 120px;
-$tab-font-padding-size: 16px;
+$tab-width: 132px;
+$tab-font-size: 16px;
+$tab-font-padding-size: 18px;
 
 // Colors
 $blues: [#0064ab,#1e79b6,#3a8dbf,#57a1c7,#75b5d0,#94c8d9,#b3dbe3,#d4edf0,#f5ffff];

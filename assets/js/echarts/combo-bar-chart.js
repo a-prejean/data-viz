@@ -1,7 +1,8 @@
 // Get data then run chart funtions with that data and specify DOM elements
 crest_data_formatted.then(function (data, dom) {
-  return combo_bar_chart(data, "combo_chart");
+  combo_bar_chart(data, "combo_chart");
 });
+
 
 function combo_bar_chart(data, dom) {
   // based on prepared DOM, initialize echarts instance
