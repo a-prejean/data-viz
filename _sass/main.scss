@@ -30,7 +30,6 @@ body {
   // For fixed nav bar:
   // min-height: 75rem; // Messes up Mapbox pages
   padding-top: 56px;
-
 }
 
 main {
@@ -72,8 +71,11 @@ h3 {
 
 .content-container {
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  padding: 20px;
+  padding: 2rem 1.5rem; // 20px
+  // height: 100%; // add height:100% for full page content
+  // display: none;
 }
+
 
 ul {
   list-style: none;
