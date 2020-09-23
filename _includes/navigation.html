@@ -1,23 +1,34 @@
-<nav class="flex-header fixed-top">
+<header class="main-header">
+  <div class="logo">
+    <a href="{{ site.baseurl }}/">Data-Viz Examples</a>
+  </div>
+
+  <input type="checkbox" class="menu-btn" id="menu-btn">
+  <label for="menu-btn" class="menu-icon">
+    <span class="menu-icon__line"></span>
+  </label>
+
+  <ul class="nav-links">
+
   {% for item in site.data.navigation %}
 
     {% if item.type != "dropdown" %}
-      <a href="{{ site.baseurl }}{{ item.link }}" class="tablink{% if page.url == item.link %} active{% endif %}">{{ item.name }}</a>
+      <li class="nav-link">
+        <a href="{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a>
+      </li>
     {% endif %}
 
     {% if item.name == "MAPS" %}
-      <div class="dropdown">
-        <button class="dropbtn{% if page.url == item.link %} active{% endif %}" onclick="dropdown_menu('map_dropdown')">{{ item.name }}</button>
-        <div class="dropdown-content" id="map_dropdown">
-          {% for link in item.links %}
-            <a href="{{ site.baseurl }}/pages/maps/{{ link }}.html">{{ link }}</a>
-          {% endfor %}
-        </div>
-      </div> 
+      <li class="nav-link">
+        <a href="{{ site.baseurl }}/pages/maps/Clusters.html">Clusters</a>
+      </li>
     {% endif %}
     
   {% endfor %}
-</nav>
+
+  </ul>
+
+</header>
 
 <script>
   // Function for dropdown menu interaction

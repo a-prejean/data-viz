@@ -1,6 +1,8 @@
-* {
-  // -webkit-box-sizing: border-box;
-  // box-sizing: border-box;
+// Resets
+*, *::before, *::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  // font-family: var(--font-stack);
 }

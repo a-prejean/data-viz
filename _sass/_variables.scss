@@ -33,3 +33,52 @@ $mobile: 800px;
 $blues: [#0064ab,#1e79b6,#3a8dbf,#57a1c7,#75b5d0,#94c8d9,#b3dbe3,#d4edf0,#f5ffff];
 // $blues: [#0065a3,#2479ae,#418db8,#5ca0c2,#79b4cb,#96c7d6,#b4dae2,#d4edef,#f3ffff];
 // $blues: [#0062a8,#1e77b3,#3a8bbd,#57a0c6,#74b3ce,#93c7d8,#b3dae2,#d4edef,#f5ffff];
+
+
+// Global Variables
+:root {
+  // Fonts
+  // font: shorthand syntax = font-style font-variant font-weight font-size/line-height font-family
+  --font-size: 16px;
+  --font-stack: Verdana, sans-serif;
+  --font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+  );
+   
+  --bg-color-alt: #21232c; // 15%, #16171d 10%
+  --bg-color: #2c2e3a; // 20%
+  --bg-highlight-color: #373a49; // 25%
+  --bg-border-color: #424557; // 30%
+
+  --primary-color: #414141;
+  --secondary-color: #414141;
+  --accent-color: #1e79b6; // 007bb7
+  --accent-color2: #0064ab; // 096599
+  --accent-color3: #3a8dbf;
+
+  --text-color: #fff;
+  --text-color-sec: #f1f1f4; // #f1f1f4
+  --text-color-alt: #b3dbe3; // #e2e3e9
+  --text-color-footer: #e2e3e9; // b8b9c7
+  --text-color-link: #57a1c7;
+  --text-color-link-visited: #b3dbe3;
+  --text-color-link-hover: #3a8dbf;
+
+  --full-size: 100%;
+
+  // Navbar
+  --navbar-size: 4rem;
+  --navbar-padding: 0 6vw; // 10vw / use px value for 'fixed' effect
+  --navbar-text-color: var(--text-color);
+  --navbar-bg-color: #21232c; // #00192b;
+  --navbar-accent-color: #0064ab;
+  --navbar-font-size: 1rem;
+  // Menu
+  --menu-bg-color: var(--navbar-bg-color);
+  --menu-font-size: 2.5rem;
+
+  --gray-scale-color: [#ffffff, #f0f1f4, #e2e3e9, #d3d5de, #c5c7d3, #b6b9c8, #a8abbd, #999db2, #8b8fa7, #7c829c, #6e7491, #636883, #585c74, #4d5166, #424557, #373a49, #2c2e3a, #21232c, #16171d, #0b0c0f, #000000]; // 100-0% in 5% increments
+
+}
