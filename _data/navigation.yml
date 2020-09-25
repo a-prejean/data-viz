@@ -4,14 +4,14 @@
   link: /pages/charts/echarts.html
 - name: Chart.js
   link: /pages/charts/chartjs.html
-- name: Clusters
-  link: /pages/maps/Clusters.html
-- name: Choropleth
-  link: /pages/maps/Choropleth.html
-# - name: MAPS
-#   link: /pages/maps.html
-#   type: dropdown
-#   links: [Choropleth, Clusters]
+# - name: Clusters
+#   link: /pages/maps/Clusters.html
+# - name: Choropleth
+#   link: /pages/maps/Choropleth.html
+- name: MAPS
+  link: /pages/maps.html
+  type: dropdown
+  links: [Choropleth, Clusters]
 - name: Observable
   link: /pages/observable.html
 # - name: Blog

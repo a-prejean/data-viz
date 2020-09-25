@@ -2,12 +2,12 @@
 // Hamburger 'pulse' animation
 @keyframes pulse {
   from {
-    box-shadow: 0 0 0 0px rgba($color: #0064ab, $alpha: 0.6);
-    background: rgba($color: #0064ab, $alpha: 0.6);
+    box-shadow: 0 0 0 0px rgba($color: $menu-pulse-color, $alpha: 0.6);
+    background: rgba($color: $menu-pulse-color, $alpha: 0.6);
   }
   to {
-    box-shadow: 0 0 0 1000px rgba($color: #0064ab, $alpha: 0);
-    background: rgba($color: #0064ab, $alpha: 0);
+    box-shadow: 0 0 0 1000px rgba($color: $menu-pulse-color, $alpha: 0);
+    background: rgba($color: $menu-pulse-color, $alpha: 0);
   }
 }
 

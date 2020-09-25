@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px) { // 767px (iPad size)
+@media screen and (max-width: 850px) { // 767px (iPad size)
   .main-header {
     .menu-icon {
       display: block;
@@ -19,10 +19,6 @@
       }
     }
     .nav-links {
-      // position: fixed;
-      // top: 0;
-      // right: 0;
-      // left: 0;
       position: absolute;
       top: 0;
       left: 0;
@@ -36,6 +32,7 @@
       font-size: 2rem;
       color: var(--navbar-text-color);
       background: var(--menu-bg-color); // #272727
+      overflow: hidden; // _me
       // Menu circle mask
       // clip-path: circle(200px at top right); // 200px
       clip-path: circle(50% at 150% -30%);
@@ -47,7 +44,7 @@
       .nav-link {
         opacity: 0;
         transform: translateX(100%); // moves to right
-        width: 100vw;
+        width: 100%;
         text-align: center;
 
         // Menu close animation
@@ -66,21 +63,32 @@
           &:nth-of-type(4) {
             transition-delay: 0.3s;
           }
-          &:nth-of-type(5) {
-            transition-delay: 0.4s;
-          }
 
-        a {
-          // display: block;
-          // padding: 2rem 0;
+        a, .dropbtn {
+          justify-content: center;
+          border-radius: 0;
+          padding: 0;
           // height: 100%;
-          padding: 2rem 4rem;
+          width: 100%;
           font-size: var(--menu-font-size);
+          height: var(--menu-link-size);
         }
+
+        .dropdown-content {
+          position: relative;
+          padding: 0; // 1rem 1.6rem;
+        }
+        .dropdown-content a {
+          padding: 1rem 1.6rem;
+          background: var(--navbar-alt-bg-color);
+          font-size: var(--menu-sub-font-size);
+          height: var(--menu-sub-link-size);
+        }
+
       }
     }
 
-    // If button is checked
+    // Animations when button is checked
     .menu-btn:checked ~ .nav-links {
 
       // Menu circle transition
@@ -110,17 +118,14 @@
         &:nth-of-type(4) {
           transition-delay: 0.7s;
         }
-        &:nth-of-type(5) {
-          transition-delay: 0.8s;
-        }
       }
 
       // Hide scrollbar
-      // body::-webkit-scrollbar {
-      //   // the entire scrollbar
-      //   width: 0;
-      //   // display: none;
-      // }
+      body::-webkit-scrollbar {
+        // the entire scrollbar
+        width: 0;
+        // display: none;
+      }
     }
 
     .menu-btn:checked ~ .menu-icon {
@@ -144,6 +149,17 @@
         }
       }
     }
+
+    .menu-btn:checked ~ .menu {
+      position: fixed; // absolute
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: var(--menu-bg-color);
+    }
+
   }
 
   .hero h1 {

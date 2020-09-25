@@ -20,8 +20,14 @@
 
     {% if item.name == "MAPS" %}
       <li class="nav-link">
-        <a href="{{ site.baseurl }}/pages/maps/Clusters.html">Clusters</a>
+        <button class="dropbtn" onclick="dropdown_menu('map_dropdown')">{{ item.name }}</button>
+        <div class="dropdown-content" id='map_dropdown'>
+          {% for link in item.links %}
+            <a href="{{ site.baseurl }}/pages/maps/{{ link }}.html">{{ link }}</a>
+          {% endfor %}
+        </div>
       </li>
+
     {% endif %}
     
   {% endfor %}
