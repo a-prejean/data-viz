@@ -14,10 +14,12 @@
 <body>
   {% include navigation.html %}
 
-  {{ content }}
-
-  {% include footer.html %}
+  <div class="map-container">
+    {{ content }}
+  </div>
   
+  {% include footer.html %}
+
   <!-- Scripts -->
   <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
 

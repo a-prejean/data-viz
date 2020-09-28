@@ -1,4 +1,4 @@
-@import "variables";
+// @import "variables";
 
 .flex-footer {
   margin-top: auto;
@@ -8,14 +8,14 @@
 }
 
 footer {
-  background: $bg-border-color;
-  color: $text-color-footer;
+  background: var(--bg-border-color);
+  color: var(--text-color-footer);
 }
 
 
 // Links
 footer a:link {
-  color: $text-color-link;
+  color: var(--text-color-link);
   background-color: transparent;
   text-decoration: none;
   outline: none;
@@ -24,6 +24,6 @@ footer a:link {
 }
 
 footer a:visited {
-  color: $text-color-link-visited;
+  color: var(--text-color-link-visited);
   background-color: transparent;
 }

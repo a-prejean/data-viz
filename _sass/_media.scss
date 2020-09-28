@@ -166,3 +166,21 @@
     font-size: 2rem;
   }
 }
+
+
+
+@media screen and (max-width: 480px) {
+  .echart-container {
+    width: 420px; // 100%;
+    height: 360px; // 100%;
+  }
+
+  .content-container {
+    padding: 0;
+  }
+  main {
+    padding: 0;
+  }
+}
+
+

@@ -23,27 +23,29 @@ html {
 html,
 body {
   // IE 10-11 didn't like using min-height
-  height: $full-size;
+  height: var(--full-size);
 }
 body {
   display: flex;
   flex-direction: column;
-  background: $bg-color;
-  color: $text-color;
-  font: 1rem $font-stack;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font: 1rem var(--font-stack);
   line-height: 1.5;
-  // font-family: $font-stack; 
+  // font-family: var(--font-stack); 
   // font-size: 100%; 
   // font-style: normal; 
   // font-variant: normal; 
   // font-weight: 700; 
   // For fixed nav bar:
   // min-height: 75rem; // Messes up Mapbox pages
-  padding-top: 4rem;
+  // padding-top: 4rem;
 }
 
 main {
-  height: 100%; // add height:100% for full page content
+  // height: 100%; // add height:100% for full page content
+  margin-top: var(--navbar-size);
+  padding: 0.25rem;
 }
 
 #title {
@@ -51,20 +53,20 @@ main {
   padding: 10px;
   font-size: 24px;
   // letter-spacing: -0.01rem;
-  color: $text-color;
+  color: var(--text-color);
 }
 h1 {
   // text-align: center;
   // padding: 0 0 1rem 1.5rem;
   font-size: 1.7rem; // 28px
-  color: $text-color;
+  color: var(--text-color);
 }
 h2 {
   font-size: 1.4rem;
-  color: $text-color;
+  color: var(--text-color);
 }
 h3 {
-  color: $text-color;
+  color: var(--text-color);
   font-size: 1.1rem;
   // font-weight: 500; 
 }
@@ -78,7 +80,7 @@ h3 {
 
 .content-container {
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  padding: 2rem 1.5rem; // 20px
+  padding: 1.25rem; // 2rem 1.5rem; / 20px;
   // padding: 5.5rem 1.5rem; // 20px
   // height: 100%; // add height:100% for full page content
   // display: none;
@@ -95,23 +97,23 @@ h3 {
 //   list-style: none;
 // 	margin: 1rem;
 //   text-align: left;
-//   color: $text-color;
+//   color: var(--text-color);
 // }
 
 .post a:link {
-  color: $text-color-sec;
+  color: var(--text-color-sec);
   background-color: transparent;
   text-decoration: none;
   outline: none;
 }
 
 .post a:visited {
-  color: $text-color-alt;
+  color: var(--text-color-alt);
   background-color: transparent;
 }
 
 .post a:hover {
-  color: $text-color-link-hover;
+  color: var(--text-color-link-hover);
   background-color: transparent;
 }
 
@@ -123,7 +125,7 @@ h3 {
 
 // Links
 main a:link {
-  color: $text-color-link;
+  color: var(--text-color-link);
   background-color: transparent;
   text-decoration: none;
   outline: none;
@@ -132,6 +134,9 @@ main a:link {
 }
 
 main a:visited {
-  color: $text-color-link-visited;
+  color: var(--text-color-link-visited);
   background-color: transparent;
 }
+
+
+
