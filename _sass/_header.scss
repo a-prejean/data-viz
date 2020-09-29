@@ -167,7 +167,7 @@ $tab-width-padding-size: 2rem;
         text-align: center;
         text-decoration: none;
 
-        transition: var(--transition-speed);
+        transition: background var(--transition-speed);
       }
       // a:hover {
       //   // background: rgba($color: #ffffff, $alpha: 0.2);
@@ -179,7 +179,7 @@ $tab-width-padding-size: 2rem;
       .dropbtn {
         height: var(--navbar-size);
         // border-radius: var(--nav-link-border-radius);
-        transition: var(--transition-speed);
+        transition: background var(--transition-speed);
       }
       .dropdown-content {
         // padding: 1rem 0;
