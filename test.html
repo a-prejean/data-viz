@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+
+</head>
+<body>
+
+  <div id="observablehq-d3070950">
+    <div class="observablehq-description"></div>
+    <div class="observablehq-viewof-map_shows"></div>
+    <div class="observablehq-viewof-date_selection"></div>
+    <div class="observablehq-viewof-vega_map_embed"></div>
+    <div class="observablehq-viewof-vega_lite_chart"></div>
+    <div class="observablehq-viewof-la_vega_chart"></div>
+    <div class="observablehq-viewof-la_m_vega_chart"></div>
+    <div class="observablehq-chart_description"></div>
+    <div class="observablehq-viewof-vl_selected_parish_chart"></div>
+    <div class="observablehq-viewof-vl_state_chart"></div>
+    <div class="observablehq-viewof-county_scale_type"></div>
+    <div class="observablehq-viewof-vl_parish_charts"></div>
+  </div>
+
+
+  <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@a-prejean/covid-19-data-for-louisiana.js?v=3";
+    (new Runtime).module(define, name => {
+      if (name === "description") return Inspector.into("#observablehq-d3070950 .observablehq-description")();
+      if (name === "viewof map_shows") return Inspector.into("#observablehq-d3070950 .observablehq-viewof-map_shows")();
+      if (name === "viewof date_selection") return Inspector.into("#observablehq-d3070950 .observablehq-viewof-date_selection")();
+      if (name === "viewof vega_map_embed") return Inspector.into("#observablehq-d3070950 .observablehq-viewof-vega_map_embed")();
+      if (name === "viewof vega_lite_chart") return Inspector.into("#observablehq-d3070950 .observablehq-viewof-vega_lite_chart")();
+      if (name === "viewof la_vega_chart") return Inspector.into("#observablehq-d3070950 .observablehq-viewof-la_vega_chart")();
+      if (name === "viewof la_m_vega_chart") return Inspector.into("#observablehq-d3070950 .observablehq-viewof-la_m_vega_chart")();
+      if (name === "chart_description") return Inspector.into("#observablehq-d3070950 .observablehq-chart_description")();
+      if (name === "viewof vl_selected_parish_chart") return Inspector.into("#observablehq-d3070950 .observablehq-viewof-vl_selected_parish_chart")();
+      if (name === "viewof vl_state_chart") return Inspector.into("#observablehq-d3070950 .observablehq-viewof-vl_state_chart")();
+      if (name === "viewof county_scale_type") return Inspector.into("#observablehq-d3070950 .observablehq-viewof-county_scale_type")();
+      if (name === "viewof vl_parish_charts") return Inspector.into("#observablehq-d3070950 .observablehq-viewof-vl_parish_charts")();
+    });
+  </script>
+
+</body>
+</html>

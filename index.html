@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/data-viz/assets/css/styles.css">
+
+    <title>Home</title>
+
+  </head>
+  <body>
+    <header class="main-header">
+  <div class="logo">
+    <a href="/data-viz/">Data-Viz Examples</a>
+  </div>
+
+  <input type="checkbox" class="menu-btn" id="menu-btn">
+  <label for="menu-btn" class="menu-icon">
+    <span class="menu-icon__line"></span>
+  </label>
+
+  <ul class="nav-links">
+
+  
+
+    
+      <li class="nav-link">
+        <a href="/data-viz/pages/charts/echarts.html">ECharts</a>
+      </li>
+    
+
+    
+    
+  
+
+    
+      <li class="nav-link">
+        <a href="/data-viz/pages/charts/chartjs.html">Chart.js</a>
+      </li>
+    
+
+    
+    
+  
+
+    
+
+    
+      <li class="nav-link">
+        <button class="dropbtn" onclick="dropdown_menu('map_dropdown')">MAPS</button>
+        <div class="dropdown-content" id='map_dropdown'>
+          
+            <a href="/data-viz/pages/maps/Choropleth.html">Choropleth</a>
+          
+            <a href="/data-viz/pages/maps/Clusters.html">Clusters</a>
+          
+        </div>
+      </li>
+
+    
+    
+  
+
+    
+      <li class="nav-link">
+        <a href="/data-viz/pages/observable.html">Observable</a>
+      </li>
+    
+
+    
+    
+  
+
+  </ul>
+
+</header>
+
+<script>
+  // Function for dropdown menu interaction
+  // When the user clicks on the button, toggle between hiding and showing the dropdown content
+  function dropdown_menu(dropdown_id) {
+    document.getElementById(dropdown_id).classList.toggle("show");
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (e) {
+      if (!e.target.matches(".dropbtn")) {
+        var myDropdown = document.getElementById(dropdown_id);
+        if (myDropdown.classList.contains("show")) {
+          myDropdown.classList.remove("show");
+        }
+      }
+    };
+  }
+</script>
+
+    <div class="content-container">
+      <main>
+        <h1>Data Visualization Examples</h1>
+
+<p>
+  Click above to see examples using various data tools.<br>
+  More examples will be added.
+</p>
+
+      </main>
+    </div>
+    
+    <footer class="flex-footer">
+  <p>Powered by 
+    <a href="https://jekyllrb.com" title="Jekyll" target="_blank">Jekyll</a>, 
+    <a href="https://www.chartjs.org" title="Chartjs" target="_blank">Chart.js</a>,
+    <a href="https://www.mapbox.com" title="Mapbox" target="_blank">Mapbox</a>, and
+    <a href="https://observablehq.com" title="Observable" target="_blank">Observable</a>
+  </p>
+</footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  </body>
+</html>
